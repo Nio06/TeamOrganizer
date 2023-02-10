@@ -1,0 +1,43 @@
+body {background-color: black; background-size: cover;
+  background-repeat: no-repeat; font-family: sans-serif;}
+#h1, h2 {color: white}
+table {
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    width: 1400px;
+    height: 600px;
+    table-layout: fixed;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    font-weight: bold;
+    /*border: 1px solid;*/
+    text-align: center;
+    vertical-align: top;
+    overflow: scroll;
+}
+
+td {
+    height: 90px;
+}
+
+#saveData {
+  align-self: right;
+}
+
+#todaysEvents {
+  text-align: left;
+  font-size: 30px;
+}
+
+#viewEventDiv, #viewDayDiv {
+  color: white;
+  text-align: left;
+}
+
+p {
+  text-align: center;
+}

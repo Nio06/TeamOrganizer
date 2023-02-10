@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang ='en'>
+  <head>
+    <meta charset="utf-8">
+    <title> Sports Team Organizer </title>
+    <link rel="stylesheet" href="220914_SportsTeamOrganizer.css">
+    <script src="220914_SportsTeamOrganizer.js"></script>
+    <script src="221005_getFiles.js"></script>
+    <script src="221011_getData.js"></script>
+    <style>
+      body{background-color:black;color:white;}
+    </style>
+  </head>
+  <body>
+    <h1> Team Organizer </h1>
+
+    <div id="openDiv">
+      <input id="gFile" class="openDiv" type="file" hidden style="display: none;">
+      <label id="openBtn" class="openDiv" for="gFile" style="display: inline;font-family: American Typewriter, Copperplate,
+                                                                      monospace; color: white; font-size: 2em;">Open</label>
+      <br><br> OR <br><br>
+      <span id="newUser"> New User </button>
+    </div>
+
+    <div id="opening" style="display: none;">
+      <h2> Today's events: </h2>
+      <button id="saveData" type="button" align="left"> Save </button>
+      <div id="todaysEvents"> </div>
+
+      <br/><br/><br/>
+
+      <h2 id="mainTitle" align="center" style="color: white;">
+      </h2>
+      <br/>
+      <table id="calendartable" bgcolor="lightgrey" align="center" cellspacing="21" cellpadding="21">
+        <thead>
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+        </thead>
+
+        <tbody id="calTableBody">
+          <!--<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>-->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="dayselected" style="display: none;">
+      <h2 id="viewDay"> </h2>
+      <h3> View Day </h3>
+      <button id="addEvent" type="button" align="right"> Add </button>
+      <br/><br/><br/>
+      <div id="viewDayDiv" style="text-align: left;"></div>
+      <br/><br/><br/>
+      <button id="backToOpening" type="button" align="left"> Back </button>
+    </div>
+
+    <div id="eventselected" style="display: none;">
+      <h2 id="viewEvent"> </h2>
+      <h3> View Event </h3>
+      <button id="editEvent" type="button" align="right"> Edit </button>
+      <br/><br/><br/>
+      <div id="viewEventDiv" style="text-align: left;"></div>
+      <br/><br/><br/>
+      <button id="backToHomeFromEvent" type="button" align="left"> Home </button>
+    </div>
+
+    <div id="eventeditselected" style="display: none;">
+      <h2 id="addNewEvent"> </h2>
+      <h3> Edit Event </h3>
+      <br/><br/><br/>
+      <label for="selEventName">Event Name: </label>
+      <select id="selEventName" name="evNames">
+        <option value="game">Game</option>
+        <option value="practice">Practice</option>
+        <option value="video">Video</option>
+        <option value="other">Other</option>
+      </select>
+      <div id="addEditDiv"></div>
+      <br/><br/><br/>
+      <button id="backToHomeFromEditEvent" type="button" align="left"> Cancel </button>
+      <button id="backToHomeFromSaveEvent" type="button" align="left" value="add"> Save </button>
+    </div>
+  </body>
+  <!-- press Control + O -->
+</html>
