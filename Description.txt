@@ -1,0 +1,4 @@
+Die txt Datei ist eine Beispieldatei als Input.
+221011_getData.js ist zur Verarbeitung der Daten aus der hochgeladenen Datei und für die Datei, die am Ende runtergeladen werden kann, wichtig.
+221005_getFiles.js ist für das Hoch- und Runterladen von Dateien zuständig.
+220914_SportsTeamOrganizer.js beinhaltet die restliche Funktionalität.
